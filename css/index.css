@@ -180,9 +180,11 @@ h1, h2, h3, h4, h5 {
   .main-content .top-content .text-content:last-child {
 	margin-right: 0;
   }
-  
+  /* Firealem 3/25/19...added width 100 and height auto to make the image responsive*/
   .main-content .middle-img {
-	margin-top: 45px;
+    margin-top: 45px;
+    width:100%;
+    height:auto;
   }
   
   /*Firealem: added flex display to bottom content, removed inline-block and width from text content*/
@@ -269,4 +271,29 @@ margin-left:30px;
 
 }
 
+/* adaptive  tablet*/
 
+@media(max-width: 800px) {
+    .container {
+      width:100%;
+     
+	  margin: 0 auto;
+
+    }
+
+    header{
+        display:flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .cta img {
+             display: none;
+    }  
+
+    .cta .cta-text {
+       
+        padding: 0px 30%;
+      }
+
+}
